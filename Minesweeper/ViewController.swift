@@ -30,8 +30,7 @@ class ViewController: UIViewController {
             for i in upper...lower {
                 for j in left...right {
                     if (0...9).contains(j) && (0...9).contains(i) && !(i == row && j == column) {
-                        let mine = mineArray[i][j]
-                        mineArray[i][j] = mine + 1
+                        mineArray[i][j] += 1
                     }
                 }
             }
